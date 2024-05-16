@@ -1,0 +1,35 @@
+{
+  "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.11/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.11",
+  "version": "1.0.0",
+  "id": "your-app-id",
+  "packageName": "com.example.hellobot",
+  "name": {
+    "short": "Hello Bot"
+  },
+  "description": {
+    "short": "A Hello World bot",
+    "full": "This is a bot that responds with 'Hello World!' when messaged."
+  },
+  "icons": {
+    "color": "color.png",
+    "outline": "outline.png"
+  },
+  "bots": [
+    {
+      "botId": "your-bot-id",
+      "scopes": [
+        "personal",
+        "team",
+        "groupchat"
+      ]
+    }
+  ],
+  "permissions": [
+    "identity",
+    "messageTeamMembers"
+  ],
+  "validDomains": [
+    "your-bot-domain.azurewebsites.net"
+  ]
+}
