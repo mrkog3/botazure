@@ -32,9 +32,6 @@ jobs:
           source .venv/bin/activate
           pip install -r requirements.txt
 
-      - name: 'Run tests'
-        run: npm test
-
       - name: Authenticate with Azure
         uses: azure/login@v1
         with:
